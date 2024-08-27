@@ -1,0 +1,132 @@
+footer {
+    background-color: #2b3948;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tours-section {
+    margin-bottom: 20px;
+}
+
+.tours-section h2 {
+    color: #e0652f;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.tours {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tours div {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.tours h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.tours ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.tours ul li {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.about-contact-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about, .contact {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about h2, .contact h2 {
+    color: #e0652f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about p, .contact p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.footer-bottom {
+    background-color: #1e2a36;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .tours {
+        flex-direction: column;
+    }
+
+    .tours div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-contact-section {
+        flex-direction: column;
+    }
+
+    .about, .contact {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .tours-section h2, .about h2, .contact h2 {
+        font-size: 18px;
+    }
+
+    .tours h3 {
+        font-size: 16px;
+    }
+
+    .tours ul li {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
